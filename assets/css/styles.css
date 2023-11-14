@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background: url(../images/background.jpg) no-repeat center center/cover;
+}
+
+.container {
+  padding: 5px 10%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 160px;
+}
+
+.hamburger-menu {
+  display: none; /* Hide by default for larger screens */
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #dc9c03;
+  font-size: 1.2rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* get the header text class and position them on the right */
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: right;
+}
+
+.name-span {
+  font-size: 80px;
+  color: #dc9c03;
+}
+
+#hireBtn {
+  background-color: #dc9c03;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+#hireBtn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#downloadBtn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+#downloadBtn:hover {
+  background-color: #dc9c03;
+  color: #000000;
+}
+
+/* -----------about-------------- */
+#about {
+  padding: 70px 0;
+  background-color: #333;
+  color: #ffffff;
+}
+
+.aboutRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.imageCol {
+  flex-basis: 40%;
+}
+
+.imageCol img {
+  width: 100%;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.textCol {
+  flex-basis: 60%;
+  padding-left: 50px;
+}
+
+#aboutMe-header {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#aboutMe-text {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.qualifications {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.qualify-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #dc9c03;
+  cursor: pointer;
+  position: relative;
+}
+
+.qualify-links::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s;
+}
+
+.qualify-links.active::after {
+  width: 50%;
+}
+
+.qualify-links:hover::after {
+  width: 100%;
+}
+
+.qualify-content ul li {
+  list-style: none;
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.qualify-content {
+  display: none;
+}
+
+.qualify-content.active-tab {
+  display: block;
+}
