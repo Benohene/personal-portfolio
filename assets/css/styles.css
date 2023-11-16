@@ -228,18 +228,18 @@ nav {
 #services {
   background-color: #000000;
   color: #ffffff;
-  padding-bottom: 70px;
+  padding: 70px 0 ;
 }
 
 .services-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
   margin-top: 50px;
 }
 
 .service {
-  padding: 50px;
+  padding: 60px;
   border-radius: 20px;
   border: 1px solid #ffffff;
   transition: all 0.3s ease;
@@ -254,11 +254,78 @@ nav {
 }
 
 .service:hover {
-  scale: 1.05;
-  background-color: #000000;
+  background-color: #dc9c03;
+  color: #000000;
+  /* Vendor prefixes for older browsers */
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
+  transform: scale(1.06);
 }
 
 /* -----------projects-------------- */
+#projects {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 70px 0;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.project {
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease;
+  background-color: #000000;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.project p {
+  text-align: center;
+}
+
+.project img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.project-linksBtn {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.project-linksBtn a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  background-color: #dc9c03;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.project-linksBtn a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 /* .projects {
   padding: 70px 0;
   background-color: #000000;
