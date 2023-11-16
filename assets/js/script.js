@@ -25,3 +25,9 @@ function opentab(tabname) {
     event.currentTarget.classList.add("active");
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+// copyright automatic year update
+document.addEventListener("DOMContentLoaded", function () {
+    var currentYear = new Date().getFullYear();
+    document.getElementById("copyright").innerHTML = "&copy; " + currentYear + " Benjamin Ohene Konadu";
+  });

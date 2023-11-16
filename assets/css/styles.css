@@ -326,78 +326,118 @@ nav {
   color: #000000;
 }
 
-/* .projects {
-  padding: 70px 0;
+/* -------------contact--------------- */
+#contact {
   background-color: #000000;
   color: #ffffff;
+  padding: 70px 0;
 }
 
-.projects-header {
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.project-card-container {
+.contactRow {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #000000;
-  flex-direction: row;
 }
 
-.project-card {
-  width: 30%;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid #ffffff;
+.contact-info {
+  flex-basis: 40%;
 }
 
-.card {
-  margin: 10px 0;
-  padding: 10px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 20px;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 10px 0;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-
-.card-bottons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 20px;
+.contact-info p {
+  font-size: 1.2rem;
   margin-top: 10px;
 }
 
-.card-btn {
+.contact-details i{
+  margin-right: 15px;
+  color: #dc9c03;
+}
+
+.social-media {
+  margin-top: 10px;
+  padding-right: 10px;
+  font-size: 2rem;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #dc9c03;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ffffff;
+}
+
+.cv-download {
+  margin-top: 20px;
+}
+
+.contact-forms {
+  flex-basis: 60%;
+  padding-left: 50px;
+}
+
+.contact-forms form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.contact-forms form input, .contact-forms form textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  background-color: #333333;
+}
+
+.contact-forms form input {
+  height: 40px;
+}
+
+.contact-forms form textarea {
+  height: 150px;
+}
+
+/* placeholder */
+.contact-forms form input::placeholder, .contact-forms form textarea::placeholder {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.sendBtn {
   background-color: #dc9c03;
   color: #000000;
- padding: 5px 10px;
+  padding: 10px 20px;
   border-radius: 20px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
-  align-items: center;
+  width: 130px;
 }
 
-.card-btn:hover {
-  background-color: #ffffff;
-  color: #000000;
-} */
+.sendBtn:hover {
+  background-color: #5c5c5c;
+  color: #ffffff;
+}
+
+/* -----------footer-------------- */
+#footer {
+  background-color: #0c0c0c;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
 
 /* ----------Media Queries------------ */
 /* For small screens */
