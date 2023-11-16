@@ -17,17 +17,14 @@
                 <nav>
                     <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="logo"></a>
     
-                    <!-- Hamburger Icon for Small Devices -->
-                    <div class="hamburger-menu" onclick="toggleMenu()">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
+                    <!-- Hamburger Icon for Small Devices icon from font awesome -->
+                    <div class="hamburger">
+                        <a href="" class="toggleBtn"><i class="fa-solid fa-bars"></i></a>
                     </div>
     
                     <ul class="nav-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -37,7 +34,7 @@
                     <p>I'm a Full-Stack Web Developer and a Graphic Designer</p>
                     <a href="#contact" id="hireBtn">Hire Me</a>
                     <!-- download CV -->
-                    <a href="#" download id="downloadBtn">Download CV</a>
+                    <a href="assets/docs/CV English.pdf" download id="downloadBtn">Download CV</a>
                 </div>
             </div>
         </div>
@@ -54,9 +51,9 @@
                         </p>
 
                         <div class="qualifications">
-                            <p class="qualify-links active">Skills</p>
-                            <p class="qualify-links">Experience</p>
-                            <p class="qualify-links">Education</p>
+                            <p class="qualify-links active" onclick="opentab('skills')">Skills</p>
+                            <p class="qualify-links" onclick="opentab('experience')">Experience</p>
+                            <p class="qualify-links" onclick="opentab('education')">Education</p>
                         </div>
 <!-- Skills -->
                         <div class="qualify-content active-tab">
@@ -124,6 +121,11 @@
         </div>
     </main>
     <footer></footer>
+
+    <!-- script js source -->
     <script src="assets/js/script.js"></script>
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/2730ac997a.js" crossorigin="anonymous"></script>
 </body>
 </html>

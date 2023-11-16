@@ -36,19 +36,6 @@ nav {
   width: 160px;
 }
 
-.hamburger-menu {
-  display: none; /* Hide by default for larger screens */
-  cursor: pointer;
-}
-
-.bar {
-  width: 30px;
-  height: 3px;
-  background-color: #ffffff;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -80,6 +67,16 @@ nav {
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+.toggleBtn {
+  position: absolute;
+  font-size: 1.8rem;
+  color: #ffffff;
+  cursor: pointer;
+  top: 2rem;
+  right: 3rem;
+  display: none;
 }
 
 /* get the header text class and position them on the right */
@@ -134,7 +131,7 @@ nav {
 /* -----------about-------------- */
 #about {
   padding: 70px 0;
-  background-color: #333;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -217,4 +214,31 @@ nav {
 
 .qualify-content.active-tab {
   display: block;
+}
+
+/* ----------Media Queries------------ */
+/* For small screens */
+@media (max-width: 790px) {
+  .toggleBtn {
+    display: block;
+  }
+
+  .nav-links {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #333;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    top: 5rem;
+    right: 5%;
+    left: 5%;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
