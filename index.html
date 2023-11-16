@@ -1,124 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a personal Portfolio website for Benjamin Ohene Konadu">
-    <meta name="keywords" content="portfolio,benjamin,web developer,software developer, full-stack developer">
-    <meta name="author" content="Benjamin Ohene Konadu">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a personal Portfolio website for Benjamin Ohene Konadu"
+    />
+    <meta
+      name="keywords"
+      content="portfolio,benjamin,web developer,software developer, full-stack developer"
+    />
+    <meta name="author" content="Benjamin Ohene Konadu" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
     <title>Benjamin Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="logo"></a>
-    
-                    <!-- Hamburger Icon for Small Devices icon from font awesome -->
-                    <div class="hamburger">
-                        <a href="" class="toggleBtn"><i class="fa-solid fa-bars"></i></a>
-                    </div>
-    
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header-text">
-                    <h1>Hi, I'm <span class="name-span">Benjamin</span></h1>
-                    <p>I'm a Full-Stack Web Developer and a Graphic Designer</p>
-                    <a href="#contact" id="hireBtn">Hire Me</a>
-                    <!-- download CV -->
-                    <a href="assets/docs/CV English.pdf" download id="downloadBtn">Download CV</a>
-                </div>
+      <div id="header">
+        <div class="container">
+          <nav>
+            <a href="index.html"
+              ><img src="assets/images/logo.png" alt="logo" class="logo"
+            /></a>
+
+            <!-- Hamburger Icon for Small Devices icon from font awesome -->
+            <div class="hamburger">
+              <a href="" class="toggleBtn"><i class="fa-solid fa-bars"></i></a>
             </div>
+
+            <ul class="nav-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-text">
+            <h1>Hi, I'm <span class="name-span">Benjamin</span></h1>
+            <p>I'm a Full-Stack Web Developer and a Graphic Designer</p>
+            <a href="#contact" id="hireBtn">Hire Me</a>
+            <!-- download CV -->
+            <a href="assets/docs/CV English.pdf" download id="downloadBtn"
+              >Download CV</a
+            >
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <div id="about">
-            <!-- About Me -->
-            <div class="container">
-                <div class="aboutRow">
-                    <div class="textCol">
-                        <h2 id="aboutMe-header">About Me</h2>
-                        <p id="aboutMe-text">I am a Full-Stack Web Developer and a Graphic Designer. I have a passion for web development. I studied Full-Stack Software Development and I am always looking for new challenges and opportunities to learn new skills. I am
-                            Performance-driven, Detailed-Oriented and creative Digital Designer skilled at developing new websites/applications and designing motion and static designs. I have expertise in management and good administrative, and computer abilities. Resourceful, honest, self-motivated, a team player, and an excellent communicator with a strong work ethic. I am always determined to develop my skills and learn more creative Ideas
-                        </p>
+      <div id="about">
+        <!-- About Me -->
+        <div class="container">
+          <div class="aboutRow">
+            <div class="textCol">
+              <h2 id="aboutMe-header">About Me</h2>
+              <p class="page-paragraph">Get to know about me</p>
+              <p id="aboutMe-text">
+                I am a Full-Stack Web Developer and a Graphic Designer. I have a
+                passion for web development. I studied Full-Stack Software
+                Development and I am always looking for new challenges and
+                opportunities to learn new skills. I am Performance-driven,
+                Detailed-Oriented and creative Digital Designer skilled at
+                developing new websites/applications and designing motion and
+                static designs. I have expertise in management and good
+                administrative, and computer abilities. Resourceful, honest,
+                self-motivated, a team player, and an excellent communicator
+                with a strong work ethic. I am always determined to develop my
+                skills and learn more creative Ideas
+              </p>
 
-                        <div class="qualifications">
-                            <p class="qualify-links active" onclick="opentab('skills')">Skills</p>
-                            <p class="qualify-links" onclick="opentab('experience')">Experience</p>
-                            <p class="qualify-links" onclick="opentab('education')">Education</p>
-                        </div>
-<!-- Skills -->
-                        <div class="qualify-content active-tab">
-                            <ul>
-                                <li>HTML 5, CSS, Javascript, Python</li>
-                                <li>Frameworks: Bootstrap, JQuery,Flasks,Django</li>
-                                <li>Database: MySQL, PostgreSQL</li>
-                                <li>Version Control: Git, GitHub</li>
-                                <li>Web Marketing, SEO, Stripe with Django</li>
-                                <li>Django Agile, Software Testing, APIs</li>
-                                <li>Photoshop, InDesign, Illustrator</li>
-                                <li>Corel Draw, Rhinoceros 3D</li>
-                                <li>WordPress</li>
-                                <li>Media-Livestream Setups</li>
-                                <li>Logo,Invitation Card,Poster and Flyer</li>
-                                <li>Video & Photo Editing</li>
-                                <li>Fashion design & Textile prints </li>
-                                <li>Microsoft Office</li>
-                            </ul>
-                        </div>
-<!-- Experience -->
-                        <div class="qualify-content">
-                            <ul>
-                                <li>Gospelhaus International Chapel– Aachen (Media Team Leader/Head) <br>
-                                <span style="color: #dc9c03;">02/2019 - Present</span></li>
-                                <br>
-                                <li>Warehouse Helper (Junghans Wolle Versand GmbH – Aachen) <br>
-                                <span style="color: #dc9c03;">09/2019 – 04 /2022</span></li>
-                                <br>
-                                <li>Freelancer (Graphic Design) <br>
-                                <span style="color: #dc9c03;">09/2017 – Present</span></li>
-                                <br>
-                                <li>Teaching Assitant (Department of Integrated Rural Art & Industry) <br>
-                                Kwame Nkrumah University of Science and Technology - Ghana <br>
-                                <span style="color: #dc9c03;">09/201 2013 – 06/2014</span></li>
-                            </ul>
-                        </div>
-<!-- Education -->
-                        <div class="qualify-content">
-                            <ul>
-                                <li>Code Institute ( Accredited by the University of West of Scotland) <br>
-                                    <span style="color: #dc9c03;">12/2022 – 08/2023 <br>
-                                    Diploma in Full-Stack Software Development (E-Commerce) <br>
-                                    <strong>Grade: Pass</strong> 
-                                </span> </li>
-                                <br>
+              <div class="qualifications">
+                <p class="qualify-links active" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="qualify-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="qualify-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <!-- Skills -->
+              <div class="qualify-contents active-tab" id="skills">
+                <ul>
+                  <li>HTML 5, CSS, Javascript, Python</li>
+                  <li>Frameworks: Bootstrap, JQuery,Flasks,Django</li>
+                  <li>Database: MySQL, PostgreSQL</li>
+                  <li>Version Control: Git, GitHub</li>
+                  <li>Web Marketing, SEO, Stripe with Django</li>
+                  <li>Django Agile, Software Testing, APIs</li>
+                  <li>Photoshop, InDesign, Illustrator</li>
+                  <li>Corel Draw, Rhinoceros 3D</li>
+                  <li>WordPress</li>
+                  <li>Media-Livestream Setups</li>
+                  <li>Logo,Invitation Card,Poster and Flyer</li>
+                  <li>Video & Photo Editing</li>
+                  <li>Fashion design & Textile prints</li>
+                  <li>Microsoft Office</li>
+                </ul>
+              </div>
+              <!-- Experience -->
+              <div class="qualify-contents" id="experience">
+                <ul>
+                  <li>
+                    Gospelhaus International Chapel– Aachen (Media Team
+                    Leader/Head) <br />
+                    <span style="color: #dc9c03">02/2019 - Present</span>
+                  </li>
+                  <br />
+                  <li>
+                    Warehouse Helper (Junghans Wolle Versand GmbH – Aachen)
+                    <br />
+                    <span style="color: #dc9c03">09/2019 – 04 /2022</span>
+                  </li>
+                  <br />
+                  <li>
+                    Freelancer (Graphic Design) <br />
+                    <span style="color: #dc9c03">09/2017 – Present</span>
+                  </li>
+                  <br />
+                  <li>
+                    Teaching Assitant (Department of Integrated Rural Art &
+                    Industry) <br />
+                    Kwame Nkrumah University of Science and Technology - Ghana
+                    <br />
+                    <span style="color: #dc9c03">09/201 2013 – 06/2014</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- Education -->
+              <div class="qualify-contents" id="education">
+                <ul>
+                  <li>
+                    Code Institute ( Accredited by the University of West of
+                    Scotland) <br />
+                    <span style="color: #dc9c03"
+                      >12/2022 – 08/2023 <br />
+                      Diploma in Full-Stack Software Development (E-Commerce)
+                      <br />
+                      <strong>Grade: Pass</strong>
+                    </span>
+                  </li>
+                  <br />
 
-                                <li>Kwame Nkrumah University Of Science and Technology - Ghana <br>
-                                    <span style="color: #dc9c03;">09/2009 – 06/2013 <br>
-                                    BA Integrated Rural Art and Industry (Specialised Textiles & Product Design) <br>
-                                    <strong>Grade: First Class Honour (Bachelor of Art)</strong></span> </li>
-                                    <br>
-                                <li>Anglican Secondary School - Ghana <br>
-                                    <span style="color: #dc9c03;">09/2009 – 06/2013 <br>
-                                    Visual Arts <br>
-                                   <strong> WASSCE Certificate</strong></span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="imageCol">
-                        <img src="assets/images/about-img.jpg" alt="benjamin" class="benjamin">
-                    </div>
-                </div>
+                  <li>
+                    Kwame Nkrumah University Of Science and Technology - Ghana
+                    <br />
+                    <span style="color: #dc9c03"
+                      >09/2009 – 06/2013 <br />
+                      BA Integrated Rural Art and Industry (Specialised Textiles
+                      & Product Design) <br />
+                      <strong
+                        >Grade: First Class Honour (Bachelor of Art)</strong
+                      ></span
+                    >
+                  </li>
+                  <br />
+                  <li>
+                    Anglican Secondary School - Ghana <br />
+                    <span style="color: #dc9c03"
+                      >09/2009 – 06/2013 <br />
+                      Visual Arts <br />
+                      <strong> WASSCE Certificate</strong></span
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="imageCol">
+              <img
+                src="assets/images/about-img.jpg"
+                alt="benjamin"
+                class="benjamin"
+              />
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Services -->
+      <div class="services" id="services">
+        <div class="container">
+          <h2 id="aboutMe-header">My Services</h2>
+          <p class="page-paragraph">What I can provide</p>
+          <div class="services-list">
+            <div class="service">
+              <i class="fa-solid fa-code" id="service-header"></i>
+              <h3 class="service-header">Web Development</h3>
+              <p>
+                I can build a responsive website for you using HTML, CSS,
+                Javascript, Bootstrap, JQuery, Python, Django, Flask, MySQL,
+                PostgreSQL, Git, GitHub, and Heroku
+              </p>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-palette" id="service-header"></i>
+              <h3 class="service-header">Graphic Design</h3>
+              <p>
+                I can design a logo, invitation card, poster, flyer, and
+                business card for you using Photoshop, InDesign, and Illustrator
+              </p>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-video" id="service-header"></i>
+              <h3 class="service-header">Video & Photo Editing</h3>
+              <p>
+                I can edit your video and photo using Adobe Premiere Pro and
+                Adobe Photoshop
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
     <footer></footer>
 
@@ -126,6 +226,9 @@
     <script src="assets/js/script.js"></script>
 
     <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/2730ac997a.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/2730ac997a.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
